@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @Html.Partial("~/Views/Resources/MetaTags.cshtml")
+
+    <link rel="icon" type="image/png" href="Content/Images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="Content/Images/favicon-16x16.png" sizes="16x16" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Open+Sans+Condensed:300|Pathway+Gothic+One|Arapey" rel="stylesheet">
+    <title>Jake Giles-Phillips</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div id="main-header" class="flex-center full-height">
+        @Html.Partial("~/Views/Headers/_PrimaryHeader.cshtml")
+    </div>
+
+    <div id="secondary-header" class="flex-column">
+        @Html.Partial("~/Views/Headers/_SecondaryHeader.cshtml")
+    </div>
+    <div id="main-body">
+        <div id="body-content" class="flex-column-start">
+            @RenderBody()
+        </div>
+        <div id="favourite-content">
+            @Html.Partial("~/Views/Home/Tiles/Favourite.cshtml")
+        </div>
+    </div>
+    <div class="main-footer">
+        @Html.Partial("~/Views/Footer/PrimaryFooter.cshtml")
+    </div>
+
+    <div id="popup-content" class="flex-start-start">
+        @*Content displayed here dynamicall by js*@
+    </div>
+    <div id="popup-image">
+        @*Images displayed here fullscreen dynamically by js*@
+        <i class="close noselect material-icons">close</i>
+        <i class="previous noselect material-icons">keyboard_arrow_left</i>
+        <img src="" />
+        <i class=" next noselect material-icons">keyboard_arrow_right</i>
+    </div>
+    <div id="popup-share" class="flex-center-center">
+        @*Popup Share menu*@
+        @Html.Partial("~/Views/Popup/ShareItem.cshtml")
+    </div>
+    <div id="popup-menu" class="flex-column">
+        @*Popup Menu*@
+        @Html.Partial("~/Views/Menu/_PopupMenu.cshtml")
+    </div>
+
+    <div id="loading" class="flex-center-center">
+        <img src="~/Content/Images/Gifs/loading-infinity.gif" width="50px"/>
+    </div>
+    <div id="instructions" class="flex-center-center">
+        <div class="fixer">
+            <span class="barlow white">Click any of the icons to filter work!</span>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/scripts")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

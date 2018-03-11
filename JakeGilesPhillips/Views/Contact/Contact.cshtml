@@ -1,0 +1,42 @@
+﻿<div id="contact-wrapper" class="flex-column-center-center">
+    <div class="letter-image">
+        <div class="animated-mail">
+            <div class="back-fold"></div>
+            <div class="letter">
+                <div class="letter-border"></div>
+                <div class="letter-title">GET IN CONTACT</div>
+                <div class="letter-context">JAKE GILES-PHILLIPS</div>
+                <div class="letter-stamp"></div>
+
+                <div class="contact-row flex-center">
+                    <span class="contact-heading">name</span>
+                    <input id="contact_name" name="name" type="text" class="contact-input" />
+                </div>
+                <div class="contact-row flex-center">
+                    <span class="contact-heading">email</span>
+                    <input id="contact_email" name="email" type="text" class="contact-input" />
+                </div>
+                <div class="contact-row flex-center">
+                    <span class="contact-heading">message</span>
+                    <textarea id="contact_message" name="message" class="contact-input" rows="8"></textarea>
+                </div>
+                <div class="contact-row flex-center">
+                    <input id="contact_submit" name="submit" type="button" class="contact-button" value="submit" />
+                </div>
+            </div>
+            <div class="top-fold"></div>
+            <div class="body"></div>
+            <div class="left-fold"></div>
+        </div>
+    </div>
+
+    <div class="confirmation">
+        <span>MESSAGE SENT!</span>
+    </div>
+</div>
+
+<script type="text/javascript">
+    setTimeout(function () {
+        $(".letter-image").addClass("open");
+    }, 500);
+</script>

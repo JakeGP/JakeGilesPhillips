@@ -1,0 +1,114 @@
+﻿/*SECONDARY HEADER*/
+#secondary-header {
+	position: absolute;
+	padding: 10px 0 10px 0;
+    z-index: 900;
+	top: 200px;
+	width: 60px;
+	height: calc(100% - 200px);
+	overflow: visible;
+    transition: .4s;
+}
+#secondary-header div {
+	width: 40px;
+	height: 60px;
+    transition: .4s;
+}
+#secondary-header.hide div {
+    margin-left: -34px;
+}
+#secondary-header div img { 
+	opacity: 0.3;
+    transition: .2s;
+}
+#secondary-header img:hover, .secondary-item i:hover {
+    padding-left: 5px;
+    color: #58afa5;
+    opacity: 0.9;
+}
+#secondary-header .secondary-homescreen {
+    cursor: pointer;
+}
+#secondary-header .secondary-item, .secondary-homescreen .secondary-item i {
+    cursor: default;
+}
+#secondary-header.hide .secondary-homescreen {
+    cursor: default;
+    opacity: 0.0;
+}
+    #secondary-header.hide .secondary-item {
+        margin-left: -34px;
+        cursor: pointer;
+        opacity: 1.0;
+    }
+.secondary-homescreen {
+    position: relative;
+    opacity: 1.0;
+}
+.secondary-item {
+    left: 75px;
+    margin-left: -134px;
+    position: absolute;
+    opacity: 0.0;
+}
+.secondary-item i {
+    color: black;
+    opacity: 0.3;
+    font-size: 24pt !important;
+    font-weight: bold;
+}
+.secondary-item:first-child {
+    color: green;
+}
+.secondary-item .tooltip {
+    left: 15px !important;
+}
+    .tooltip {
+        position: absolute;
+        display: block;
+        max-width: 0px;
+        transition: .4s;
+        overflow: hidden;
+        font-weight: bold;
+        padding: 0px;
+        font-family: 'Barlow';
+        border-radius: 5px;
+        left: 50px;
+        background: #a2a2a2;
+        color: white;
+    }
+.secondary-homescreen div:hover > .tooltip {
+    position: absolute;
+    overflow: visible;
+    padding: 2px 5px 5px 5px;
+    background: #54afa5;
+    max-width: 100px;
+}
+
+#secondary-header.hide .secondary-item div:hover > .tooltip {
+    position: absolute;
+    overflow: visible;
+    padding: 2px 5px 5px 5px;
+    background: #54afa5;
+    max-width: 100px;
+}
+#secondary-header.hide .secondary-homescreen div:hover > .tooltip {
+    display: none;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #a2a2a2;
+    transition: .4s;
+}
+div:hover > .tooltip::after {
+    border-right: 8px solid #54afa5;
+}
+/*SECONDARY HEADER*/

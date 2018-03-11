@@ -1,0 +1,153 @@
+﻿/*MAIN HEADER*/
+#main-header {
+	position: absolute;
+	z-index: 102;
+	top: 0;
+	left: 0;
+	width: 100%;
+    transition: .4s;
+    height: 200px;
+    background: #f7f9fb;
+    transition: .4s;
+}
+
+#main-header-logo {
+    cursor: pointer;
+}
+	#main-header-logo img {
+        position: relative;
+		width: 400px;
+	}
+
+#main-header-left {
+	width: 70%;
+	padding-left: 60px;
+    transition: .4s;
+}
+
+#main-header-right {
+    position: relative;
+	width: 30%;
+	padding-right: 60px;
+    z-index: 180;
+}
+
+#main-header-menu {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+	#main-header-menu:hover #bars {
+		width: 20px;
+	}
+		#main-header-menu:hover #bars:after {
+			width: 19.5px;
+		}
+
+	#bars {
+		display: block;
+		width: 16px;
+		height: 2px;
+		background: #58afa5;
+		transition: .4s;
+	}
+		#bars:after {
+			content: '';
+			position: absolute;
+			margin-top: -6px;
+			width: 10px;
+			height: 2px;
+			background: #58afa5;
+			transition: .4s;
+		}
+		#bars:before {
+			content: '';
+			position: absolute;
+			margin-top: 6px;
+			width: 20px;
+			height: 2px;
+			background: #58afa5;
+			transition: .4s;
+		}
+	#bars.clicked {
+		background: white;
+	}
+		#bars.clicked:before {
+			margin-top: 0;
+			width: 20px;
+			transform: rotateZ(45deg);
+		}	
+		#bars.clicked:after {
+			margin-top: 0;
+			width: 20px;
+			transform: rotateZ(135deg);
+		}
+
+#main-header-links {
+	width: 170px;
+    z-index: 120;
+}
+	#main-header-links span {
+		font-family: "Barlow";
+		font-weight: 600;
+		margin-bottom: 3px;
+		color: #a2a2a2;
+	}
+
+#contact-button {
+	z-index: 10;
+	font-size: 20pt !important;
+	color: #58afa5;
+}
+
+#main-header-sorting {
+    min-width: 270px;
+	margin-left: 40px;
+}
+#main-header-sorting i {
+	color: #58afa5;
+	font-size: 20pt !important;
+}
+#main-header-sorting .sorting-all {
+    margin-right: 18px;
+}
+.sorting-item {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+    .sorting-item span {
+        position: absolute;
+        margin: 0 0px 3px 0px;
+        font-family: "Barlow";
+        max-width: 0;
+        font-weight: 600;
+        overflow: hidden;
+        color: #a2a2a2;
+    }
+    .sorting-item:not(.selected):hover span {
+        margin: 27px 0px 0px -1px;
+        max-width: 100px;
+        position: absolute;
+        z-index: 10;
+    }
+.tagline {
+    margin-bottom: 0;
+}
+.sorting-item.selected span {
+    position: relative;
+    margin: 0 6px 3px 10px;
+	max-width: 100px;
+	color: #58afa5;
+}
+/*MAIN HEADER*/
+#blog-header-left {
+    margin-left: 40px;
+}

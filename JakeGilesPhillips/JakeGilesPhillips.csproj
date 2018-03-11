@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C31D0AD8-E821-4FE6-8DD7-13DADD016A18}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JakeGilesPhillips</RootNamespace>
+    <AssemblyName>JakeGilesPhillips</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\WorkItemViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\CSS\About\About.css" />
+    <Content Include="Content\CSS\Blog\Blog.css" />
+    <Content Include="Content\CSS\Footer\Footer.css" />
+    <Content Include="Content\CSS\Headers\PrimaryHeader.css" />
+    <Content Include="Content\CSS\Headers\SecondaryHeader.css" />
+    <Content Include="Content\CSS\Home\Contact.css" />
+    <Content Include="Content\CSS\Home\Index.css" />
+    <Content Include="Content\CSS\Menu\PopupMenu.css" />
+    <Content Include="Content\CSS\Shared\Flex.css" />
+    <Content Include="Content\CSS\Shared\ResponsiveCSS.css" />
+    <Content Include="Content\CSS\Shared\Shared.css" />
+    <Content Include="Content\CSS\Work\Gallery.css" />
+    <Content Include="Content\CSS\Work\WorkItem.css" />
+    <Content Include="Content\Files\Documents\Jake Giles-Phillips - CV.pdf" />
+    <Content Include="Content\Files\OBJ\Modelling\Xenomorph-normal.png" />
+    <Content Include="Content\Files\OBJ\Modelling\Xenomorph-texture.png" />
+    <Content Include="Content\Files\OBJ\Modelling\Xenomorph.mtl" />
+    <Content Include="Content\Images\favicon-16x16.png" />
+    <Content Include="Content\Images\favicon-32x32.png" />
+    <Content Include="Content\Images\Gifs\loading-infinity.gif" />
+    <Content Include="Content\Images\Gifs\pacman.gif" />
+    <Content Include="Content\Images\Icons\Cplusplus-Black.png" />
+    <Content Include="Content\Images\Icons\Cplusplus-Colour.png" />
+    <Content Include="Content\Images\Icons\Csharp-Black.png" />
+    <Content Include="Content\Images\Icons\Csharp-Colour.png" />
+    <Content Include="Content\Images\Icons\CSS-Black.png" />
+    <Content Include="Content\Images\Icons\CSS-Colour.png" />
+    <Content Include="Content\Images\Icons\Html-Black.png" />
+    <Content Include="Content\Images\Icons\Html-Colour.png" />
+    <Content Include="Content\Images\Icons\Illustrator-Black.png" />
+    <Content Include="Content\Images\Icons\Illustrator-Colour.png" />
+    <Content Include="Content\Images\Icons\JS-Black.png" />
+    <Content Include="Content\Images\Icons\JS-Colour.png" />
+    <Content Include="Content\Images\Icons\Maya-Black.png" />
+    <Content Include="Content\Images\Icons\Maya-Colour.png" />
+    <Content Include="Content\Images\Icons\Photoshop-Black.png" />
+    <Content Include="Content\Images\Icons\Photoshop-Colour.png" />
+    <Content Include="Content\Images\Icons\Substance-Black.png" />
+    <Content Include="Content\Images\Icons\Substance-Colour.png" />
+    <Content Include="Content\Images\Icons\UE4-Black.png" />
+    <Content Include="Content\Images\Icons\UE4-Colour.png" />
+    <Content Include="Content\Images\Icons\Unity-Black.png" />
+    <Content Include="Content\Images\Icons\Unity-Colour.png" />
+    <Content Include="Content\Images\Icons\Vive-Black.png" />
+    <Content Include="Content\Images\Icons\Vive-Colour.png" />
+    <Content Include="Content\Images\Icons\ZBrush-Black.png" />
+    <Content Include="Content\Images\Icons\ZBrush-Colour.png" />
+    <Content Include="Content\Images\Logos\banner.jpg" />
+    <Content Include="Content\Images\Logos\tall_banner.jpg" />
+    <Content Include="Content\Images\Work\GameAsset\Container\1.png" />
+    <Content Include="Content\Images\Work\GameAsset\Container\2.png" />
+    <Content Include="Content\Images\Work\GameAsset\Container\3.jpg" />
+    <Content Include="Content\Images\Work\GameAsset\Container\4.jpg" />
+    <Content Include="Content\Images\Work\GameAsset\LowPolyTree\Render 2.PNG" />
+    <Content Include="Content\Images\Work\GameAsset\LowPolyTree\Render 3.PNG" />
+    <Content Include="Content\Images\Work\GameAsset\LowPolyTree\Render 5.PNG" />
+    <Content Include="Content\Images\Work\GameAsset\LowPolyTree\Render.jpeg" />
+    <Content Include="Content\Images\Work\GameAsset\LowPolyTree\Render4.PNG" />
+    <Content Include="Content\Images\Work\GameAsset\Tree\1.jpg" />
+    <Content Include="Content\Images\Work\GameAsset\Tree\10.png" />
+    <Content Include="Content\Images\Work\GameAsset\Tree\11.png" />
+    <Content Include="Content\Images\Work\GameAsset\Tree\2.jpg" />
+    <Content Include="Content\Images\Work\GameAsset\Tree\3.jpg" />
+    <Content Include="Content\Images\Work\GameAsset\Tree\4.jpg" />
+    <Content Include="Content\Images\Work\GameAsset\Tree\5.jpg" />
+    <Content Include="Content\Images\Work\GameAsset\Tree\6.jpg" />
+    <Content Include="Content\Images\Work\GameAsset\Tree\7.jpg" />
+    <Content Include="Content\Images\Work\GameAsset\Tree\8.jpg" />
+    <Content Include="Content\Images\Work\GameAsset\Tree\9.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\Asteroids\1.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\Asteroids\2.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\Asteroids\3.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\Asteroids\4.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\Asteroids\5.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\BlockRunner\1.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\BlockRunner\2.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\BlockRunner\3.gif" />
+    <Content Include="Content\Images\Work\GameDesign\BlockRunner\3.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\BlockRunner\4.gif" />
+    <Content Include="Content\Images\Work\GameDesign\BlockRunner\5.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\BlockRunner\6.gif" />
+    <Content Include="Content\Images\Work\GameDesign\BlockRunner\7.gif" />
+    <Content Include="Content\Images\Work\GameDesign\BlockRunner\8.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\HarryPotter\1.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\HarryPotter\2.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\HarryPotter\3.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\HarryPotter\4.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\HarryPotter\5.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\HarryPotter\6.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\HarryPotter\7.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\HarryPotter\8.PNG" />
+    <Content Include="Content\Images\Work\GameDesign\HarryPotter\tile.png" />
+    <Content Include="Content\Images\Work\GameDesign\PixelTanks\1.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\PixelTanks\2.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\PixelTanks\3.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\PixelTanks\4.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\PixelTanks\5.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\PixelTanks\6.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\PixelTanks\7.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\PixelTanks\8.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\SpaceScroller\1.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\SpaceScroller\2.png" />
+    <Content Include="Content\Images\Work\GameDesign\SpaceScroller\3.png" />
+    <Content Include="Content\Images\Work\GameDesign\SpaceScroller\4.png" />
+    <Content Include="Content\Images\Work\GameDesign\SpaceScroller\5.png" />
+    <Content Include="Content\Images\Work\GameDesign\SpaceScroller\6.png" />
+    <Content Include="Content\Images\Work\GameDesign\SpaceScroller\7.png" />
+    <Content Include="Content\Images\Work\GameDesign\SpaceScroller\8.png" />
+    <Content Include="Content\Images\Work\GameDesign\SpaceScroller\9.png" />
+    <Content Include="Content\Images\Work\GameDesign\WSYG\1.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\WSYG\2.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\WSYG\3.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\WSYG\4.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\WSYG\5.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\WSYG\6.jpg" />
+    <Content Include="Content\Images\Work\GameDesign\WSYG\7.jpg" />
+    <Content Include="Content\Images\Work\GamesJam\2016\1.png" />
+    <Content Include="Content\Images\Work\GamesJam\2016\2.png" />
+    <Content Include="Content\Images\Work\GamesJam\2016\3.png" />
+    <Content Include="Content\Images\Work\GamesJam\2016\4.png" />
+    <Content Include="Content\Images\Work\GamesJam\2017\1.PNG" />
+    <Content Include="Content\Images\Work\GamesJam\2017\2.PNG" />
+    <Content Include="Content\Images\Work\GamesJam\2017\3.PNG" />
+    <Content Include="Content\Images\Work\GamesJam\2017\4.PNG" />
+    <Content Include="Content\Images\Work\GraphicDesign\BaconSandwiches\1.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\BaconSandwiches\2.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\BaconSandwiches\3.png" />
+    <Content Include="Content\Images\Work\GraphicDesign\BaconSandwiches\4.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\BaconSandwiches\5.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Fokus\1.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Fokus\2.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Fokus\3.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Fokus\4.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Fokus\5.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Fokus\6.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Fokus\7.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Fokus\8.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Fokus\9.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Hawx\1.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Hawx\2.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Hawx\3.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Hawx\4.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Hawx\5.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Hawx\6.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Hawx\7.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Hawx\8.jpg" />
+    <Content Include="Content\Images\Work\GraphicDesign\Hawx\9.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\FuturisticCity\1.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\FuturisticCity\2.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\FuturisticCity\3.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\FuturisticCity\4.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\FuturisticCity\5.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\FuturisticCity\6.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\GryffindorCommonRoom\1.png" />
+    <Content Include="Content\Images\Work\LevelDesign\GryffindorCommonRoom\2.png" />
+    <Content Include="Content\Images\Work\LevelDesign\GryffindorCommonRoom\3.png" />
+    <Content Include="Content\Images\Work\LevelDesign\GryffindorCommonRoom\4.png" />
+    <Content Include="Content\Images\Work\LevelDesign\GryffindorCommonRoom\5.png" />
+    <Content Include="Content\Images\Work\LevelDesign\GryffindorCommonRoom\6.png" />
+    <Content Include="Content\Images\Work\LevelDesign\GryffindorCommonRoom\7.png" />
+    <Content Include="Content\Images\Work\LevelDesign\GryffindorCommonRoom\8.png" />
+    <Content Include="Content\Images\Work\LevelDesign\GryffindorCommonRoom\9.png" />
+    <Content Include="Content\Images\Work\LevelDesign\NewBerlin\1.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\NewBerlin\2.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\NewBerlin\3.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\NewBerlin\4.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\NewBerlin\5.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\NewBerlin\6.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\NewBerlin\7.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\NewBerlin\8.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\NewBerlin\9.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\Paradise\1.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\Paradise\10.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\Paradise\11.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\Paradise\2.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\Paradise\3.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\Paradise\4.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\Paradise\5.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\Paradise\6.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\Paradise\7.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\Paradise\8.jpg" />
+    <Content Include="Content\Images\Work\LevelDesign\Paradise\9.jpg" />
+    <Content Include="Content\Images\Work\Modelling\DesertEagle\1.jpg" />
+    <Content Include="Content\Images\Work\Modelling\DesertEagle\2.jpg" />
+    <Content Include="Content\Images\Work\Modelling\DesertEagle\3.jpg" />
+    <Content Include="Content\Images\Work\Modelling\DesertEagle\4.jpg" />
+    <Content Include="Content\Images\Work\Modelling\DesertEagle\5.jpg" />
+    <Content Include="Content\Images\Work\Modelling\DesertEagle\6.jpg" />
+    <Content Include="Content\Images\Work\Modelling\DwarvenSoldier\1.png" />
+    <Content Include="Content\Images\Work\Modelling\DwarvenSoldier\2.gif" />
+    <Content Include="Content\Images\Work\Modelling\DwarvenSoldier\3.png" />
+    <Content Include="Content\Images\Work\Modelling\DwarvenSoldier\4.png" />
+    <Content Include="Content\Images\Work\Modelling\DwarvenSoldier\5.png" />
+    <Content Include="Content\Images\Work\Modelling\DwarvenSoldier\6.gif" />
+    <Content Include="Content\Images\Work\Modelling\Horse\1.png" />
+    <Content Include="Content\Images\Work\Modelling\Horse\2.gif" />
+    <Content Include="Content\Images\Work\Modelling\Horse\3.gif" />
+    <Content Include="Content\Images\Work\Modelling\Horse\4.gif" />
+    <Content Include="Content\Images\Work\Modelling\Horse\5.gif" />
+    <Content Include="Content\Images\Work\Modelling\Horse\6.gif" />
+    <Content Include="Content\Images\Work\Modelling\Reaper\1.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Reaper\2.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Reaper\3.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Reaper\4.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Reaper\5.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Reaper\6.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Reaper\7.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Tank\1.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Tank\2.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Tank\3.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Tank\4.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Tank\5.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Tank\6.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Tank\7.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Xenomorph\Close Up Render - Textured.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Xenomorph\Close Up Render.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Xenomorph\Frontal View.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Xenomorph\HD Render.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Xenomorph\Head Close Up.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Xenomorph\Side View Render - Textured.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Xenomorph\Side View Render.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Xenomorph\TileBackground.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Xenomorph\Wide Angle Render - Textured.jpg" />
+    <Content Include="Content\Images\Work\Modelling\Xenomorph\Wide Angle Render.jpg" />
+    <Content Include="Content\Images\Work\WebDesign\BusinessCard\1.PNG" />
+    <Content Include="Content\Images\Work\WebDesign\CustomisableWeather\Tile.PNG" />
+    <Content Include="Content\Images\Work\WebDesign\GreekWindow\Tile.PNG" />
+    <Content Include="Content\Images\Work\WebDesign\LondonCityWindow\Tile.PNG" />
+    <Content Include="Content\Images\Work\WebDesign\MailButton\1.PNG" />
+    <Content Include="Content\Images\Work\WebDesign\MaterialDesign\Tile.PNG" />
+    <Content Include="Content\Images\Work\WebDesign\NewYorkCityWindow\Tile.PNG" />
+    <Content Include="Content\Images\Work\WebDesign\OverwatchLoading\Tile.PNG" />
+    <Content Include="Content\Images\Work\WebDesign\PokemonGoEgg\Tile.PNG" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\CSS\Shared\Site.css" />
+    <Content Include="Scripts\ExternalScripts\bootstrap.js" />
+    <Content Include="Scripts\ExternalScripts\bootstrap.min.js" />
+    <Content Include="Content\Files\OBJ\Modelling\DesertEagle.mtl" />
+    <Content Include="Content\Files\OBJ\Modelling\DesertEagle.obj" />
+    <Content Include="Content\Files\OBJ\Modelling\DwarvenSoldier.mtl" />
+    <Content Include="Content\Files\OBJ\Modelling\DwarvenSoldier.obj" />
+    <Content Include="Content\Files\OBJ\Modelling\Xenomorph.obj" />
+    <Content Include="Content\Files\OBJ\GameAsset\Container.mtl" />
+    <Content Include="Content\Files\OBJ\GameAsset\Container.obj" />
+    <Content Include="Content\Files\OBJ\GameAsset\LowPolyTree.mtl" />
+    <Content Include="Content\Files\OBJ\GameAsset\LowPolyTree.obj" />
+    <Content Include="Content\Files\OBJ\GameAsset\Tree.mtl" />
+    <Content Include="Content\Files\OBJ\GameAsset\Tree.obj" />
+    <None Include="Properties\PublishProfiles\jakegilesphillips.co.uk - Web Deploy.pubxml" />
+    <None Include="Scripts\ExternalScripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\ExternalScripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\ExternalScripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\ExternalScripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\ExternalScripts\jquery.validate.js" />
+    <Content Include="Scripts\ExternalScripts\jquery.validate.min.js" />
+    <Content Include="Scripts\ExternalScripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\ExternalScripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\ExternalScripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\ExternalScripts\respond.js" />
+    <Content Include="Scripts\ExternalScripts\respond.min.js" />
+    <Content Include="Scripts\ExternalScripts\_references.js" />
+    <Content Include="Scripts\LocalScripts\common.js" />
+    <Content Include="Scripts\LocalScripts\DDSLoader.js" />
+    <Content Include="Scripts\LocalScripts\Gallery.js" />
+    <Content Include="Scripts\LocalScripts\MTLLoader.js" />
+    <Content Include="Scripts\LocalScripts\OBJLoader.js" />
+    <Content Include="Scripts\LocalScripts\OrbitControls.js" />
+    <Content Include="Scripts\LocalScripts\TileLinks.js" />
+    <Content Include="Scripts\three.js-master\three.js-master\build\three.js" />
+    <Content Include="Scripts\three.js-master\three.js-master\build\three.min.js" />
+    <Content Include="Scripts\three.js-master\three.js-master\build\three.module.js" />
+    <Content Include="sitemap.xml" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\About\About.cshtml" />
+    <Content Include="Views\Contact\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\ExternalScripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Headers\_PrimaryHeader.cshtml" />
+    <Content Include="Views\Headers\_SecondaryHeader.cshtml" />
+    <Content Include="Views\Menu\_PopupMenu.cshtml" />
+    <Content Include="Views\Work\Modelling\Xenomorph.cshtml" />
+    <Content Include="Views\Work\LevelDesign\GryffindorCommonRoom.cshtml" />
+    <Content Include="Views\Work\Modelling\Tank.cshtml" />
+    <Content Include="Views\Work\Template.cshtml" />
+    <Content Include="Views\Home\Tiles\Tiles.cshtml" />
+    <Content Include="Views\Footer\PrimaryFooter.cshtml" />
+    <Content Include="Views\Work\Modelling\Reaper.cshtml" />
+    <Content Include="Views\Work\Modelling\Horse.cshtml" />
+    <Content Include="Views\Work\Modelling\DwarvenSoldier.cshtml" />
+    <Content Include="Views\Work\Modelling\DesertEagle.cshtml" />
+    <Content Include="Views\Work\LevelDesign\NewBerlin.cshtml" />
+    <Content Include="Views\Work\LevelDesign\Paradise.cshtml" />
+    <Content Include="Views\Work\GameDesign\HarryPotterVR.cshtml" />
+    <Content Include="Views\Work\GameDesign\Asteroids.cshtml" />
+    <Content Include="Views\Work\GameDesign\PixelTanks.cshtml" />
+    <Content Include="Views\Work\GameDesign\WSYG.cshtml" />
+    <Content Include="Views\Work\GameDesign\SpaceScroller.cshtml" />
+    <Content Include="Views\Work\GamesJam\FecalObject.cshtml" />
+    <Content Include="Views\Work\LevelDesign\FuturisticCity.cshtml" />
+    <Content Include="Views\Work\GameAsset\Container.cshtml" />
+    <Content Include="Views\Work\GameAsset\Tree.cshtml" />
+    <Content Include="Views\Shared\_BlogLayout.cshtml" />
+    <Content Include="Views\Headers\_ShortHeaderBlog.cshtml" />
+    <Content Include="Views\Blog\BlogIndex.cshtml" />
+    <Content Include="Views\Work\GraphicDesign\Hawx.cshtml" />
+    <Content Include="Views\Work\GraphicDesign\Fokus.cshtml" />
+    <Content Include="Views\Work\GraphicDesign\BaconSandwiches.cshtml" />
+    <Content Include="Views\Work\WebDesign\BusinessCard.cshtml" />
+    <Content Include="Views\Work\WebDesign\MailButton.cshtml" />
+    <Content Include="Views\Work\GamesJam\FlowRider.cshtml" />
+    <Content Include="Views\Shared\_AboutLayout.cshtml" />
+    <Content Include="Views\Work\GameDesign\BlockRunner.cshtml" />
+    <Content Include="Views\Headers\_ShortHeaderAbout.cshtml" />
+    <Content Include="Views\Home\Tiles\Favourite.cshtml" />
+    <Content Include="Views\Shared\_ContactLayout.cshtml" />
+    <Content Include="Views\Headers\_ShortHeader.cshtml" />
+    <Content Include="Views\Menu\_PopupMenuSmall.cshtml" />
+    <Content Include="Views\Popup\ShareItem.cshtml" />
+    <Content Include="Views\Resources\Sitemap.cshtml" />
+    <Content Include="Views\Shared\_SmallLayout.cshtml" />
+    <Content Include="Views\Resources\MetaTags.cshtml" />
+    <Content Include="Views\Work\WebDesign\PokemonGoEgg.cshtml" />
+    <Content Include="Views\Work\WebDesign\MaterialDesign.cshtml" />
+    <Content Include="Views\Work\WebDesign\LondonCityWindow.cshtml" />
+    <Content Include="Views\Work\WebDesign\GreekWindow.cshtml" />
+    <Content Include="Views\Work\WebDesign\NewYorkCityWindow.cshtml" />
+    <Content Include="Views\Work\WebDesign\CustomisableWeather.cshtml" />
+    <Content Include="Views\Work\WebDesign\OverwatchLoading.cshtml" />
+    <Content Include="Views\Work\GameAsset\LowPolyTree.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57993</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57993/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

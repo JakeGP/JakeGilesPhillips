@@ -1,0 +1,76 @@
+﻿html, body {
+    position: relative;
+	overflow: hidden;
+	height: 100%;
+}
+
+body {
+	background: #F7F9FB;
+	margin: 0;
+}
+
+input {
+	border: none;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+i {
+	font-size: 15pt !important;
+}
+
+span, i {
+	cursor: pointer;
+	transition: .2s;
+	color: #454546;
+	white-space: nowrap;
+}
+
+a:link {
+    /* Applies to all unvisited links */
+    text-decoration: none;
+    color: unset;
+}
+
+a:visited {
+    /* Applies to all visited links */
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    /* Applies to links under the pointer */
+    text-decoration: none;
+    color: unset;
+}
+
+a:active {
+    /* Applies to activated links */
+    text-decoration: none;
+    color: unset;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1);
+    opacity: 0.0;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0,0,0,0.4);
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background: rgba(0,0,0,.9);
+    }

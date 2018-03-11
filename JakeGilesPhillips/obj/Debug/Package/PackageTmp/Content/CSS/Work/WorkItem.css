@@ -1,0 +1,62 @@
+﻿#work-item-wrapper {
+    margin-top: 8px;
+    width: 55%;
+    min-width: 55%;
+    height: 100%;
+    overflow-y: auto;
+}
+#work-item-wrapper span {
+	font-family: 'Barlow';
+}
+#work-item-wrapper iframe {
+    width: 190%;
+}
+canvas.work-right-content  {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+}
+    canvas.work-right-content:active {
+        cursor: -webkit-grabbing;
+        cursor: -moz-grabbing;
+    }
+.work-title span {
+	font-size: 35pt;
+	font-weight: bold;
+	color: #58afa5 !important;
+    text-transform: uppercase;
+}
+.work-subtitle span {
+    font-size: 13pt;
+    font-weight: bold;
+    color: #777676;
+    white-space: normal;
+}
+.work-description {
+    margin: 15px 0;
+}
+.work-date span {
+    font-size: 10pt;
+    font-weight: bold;
+    color: #777676;
+}
+    .work-description span {
+        white-space: normal;
+        font-weight: 600;
+        color: #929292;
+    }
+.work-image {
+    position: relative;
+    width: 70%;
+}
+.work-image img {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.work-right-content {
+    margin-top: 8px;
+    top: 0;
+    width: 45%;
+    min-width: 45%;
+    height: 100%;
+}

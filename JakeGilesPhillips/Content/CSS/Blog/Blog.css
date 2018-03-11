@@ -1,0 +1,12 @@
+﻿#body-content {
+    position: absolute;
+    width: 100%;
+}
+
+#body-content span {
+        font-family: 'Barlow';
+        font-weight: bold;
+    }
+#body-content img {
+    margin-left: 60px;
+}

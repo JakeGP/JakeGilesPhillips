@@ -1,0 +1,67 @@
+﻿.hover-darkblue:hover {
+	color: #52ACA2 !important;
+	font-weight: bold !important;
+}
+.hover-midblue:hover {
+	color: #8BD7D3 !important;
+	font-weight: bold !important;
+}
+.hover-lightblue:hover {
+	color: #CBEFE8 !important;
+	font-weight: bold !important;
+}
+.hover-black {
+	color: black;
+	font-weight: bold !important;
+}
+.mobile-show {
+    display: none;
+}
+
+.barlow {
+    font-family: 'Barlow';
+    font-weight: bold;
+}
+.darkblue {
+    color: #52ACA2 !important;
+    transition: .4s;
+}
+.midblue {
+    color: #8BD7D3 !important;
+    transition: .4s;
+}
+.lightblue {
+    color: #CBEFE8 !important;
+    transition: .4s;
+}
+.border-bottom-none {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-family: "Barlow";
+	color: #a2a2a2;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	font-family: "Barlow";
+	color: #a2a2a2;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	font-family: "Barlow";
+	color: #a2a2a2;
+}
+:-moz-placeholder { /* Firefox 18- */
+	font-family: "Barlow";
+	color: #a2a2a2;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}

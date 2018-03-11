@@ -1,0 +1,81 @@
+﻿body.small #body-content.about {
+    margin-top: 108px;
+    height: calc(100% - 108px) !important;
+}
+
+#about-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.about-left, .about-right {
+    height: 100%;
+}
+.about-left {
+    width: 48%;
+    margin-right: 2%;
+}
+.about-right {
+    width: 48%;
+    overflow-y: auto;
+    padding-right: 2%;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.about-image img {
+    width: 100%;
+}
+.about-title {
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+    .about-title span {
+        color: #58afa5;
+        font-weight: bold;
+    }
+
+#about-wrapper div {
+    font-family: 'Barlow';
+    color: #777676;
+}
+
+.about-description {
+    white-space: normal;
+}
+.about-heading {
+    font-family: 'Barlow';
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 5px;
+    display: block;
+}
+.about-text {
+    margin-left: 10px;
+    font-family: 'Barlow';
+    width: 100%;
+    display: block;
+    white-space: normal
+}
+.about-divide {
+    font-family: 'Barlow';
+    margin: 30px 70px;
+    border-bottom: 1px dashed grey;
+}
+.about-spacer {
+    margin: 20px 0;
+}
+.about-list {
+    list-style-type: circle;
+    margin: 0;
+    color: unset;
+}
+    .about-list li {
+        font-family: 'Barlow';
+        color: unset;
+    }
+    .about-link {
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        display: block;
+    }

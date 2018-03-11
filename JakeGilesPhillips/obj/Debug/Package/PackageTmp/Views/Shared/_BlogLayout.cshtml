@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @Html.Partial("~/Views/Resources/MetaTags.cshtml")
+
+    <link rel="icon" type="image/png" href="Content/Images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="Content/Images/favicon-16x16.png" sizes="16x16" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Open+Sans+Condensed:300|Pathway+Gothic+One|Arapey" rel="stylesheet">
+    <title>JGP - Blog</title>
+    @Styles.Render("~/Content/blogcss")
+</head>
+<body class="small">
+    <div id="main-header" class="flex-center full-height">
+        @Html.Partial("~/Views/Headers/_ShortHeaderBlog.cshtml")
+    </div>
+
+    <div id="body-content" class="flex-column-center-center">
+        @RenderBody()
+    </div>
+
+    <div id="popup-menu" class="flex-column small">
+        @Html.Partial("~/Views/Menu/_PopupMenuSmall.cshtml")
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/scripts")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
