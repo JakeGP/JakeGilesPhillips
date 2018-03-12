@@ -104,10 +104,6 @@
     min-width: 270px;
 	margin-left: 40px;
 }
-#main-header-sorting i {
-	color: #58afa5;
-	font-size: 20pt !important;
-}
 #main-header-sorting .sorting-all {
     margin-right: 18px;
 }
@@ -141,11 +137,18 @@
 .tagline {
     margin-bottom: 0;
 }
+.sorting-item i {
+    color: #a2a2a2;
+    font-size: 20pt !important;
+}
 .sorting-item.selected span {
     position: relative;
     margin: 0 6px 3px 10px;
 	max-width: 100px;
 	color: #58afa5;
+}
+.sorting-item.selected i {
+    color: #58afa5 !important;
 }
 /*MAIN HEADER*/
 #blog-header-left {

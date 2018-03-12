@@ -8,6 +8,23 @@
     height: 100%;
     overflow: hidden;
 }
+#CV-download {
+    background: #58afa5;
+    width: 260px;
+    height: 40px;
+    border-radius: 10px;
+    padding-bottom: 2px;
+}
+
+.about-link {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    color: white;
+}
+
+
 .about-left, .about-right {
     height: 100%;
 }
@@ -72,10 +89,4 @@
     .about-list li {
         font-family: 'Barlow';
         color: unset;
-    }
-    .about-link {
-        text-align: center;
-        font-weight: bold;
-        width: 100%;
-        display: block;
     }
